@@ -1,0 +1,44 @@
+{
+  "name": "phoenix-integration-testsuite",
+  "description": "Phoenix Automation Test Suite",
+  "keywords": [
+    "playwright",
+    "typescript",
+    "testing",
+    "api",
+    "supertest"
+  ],
+  "scripts": {
+    "test:e2e": "npx playwright test",
+    "test:api": "vitest --config vitest.api.config.ts"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.9.1",
+    "@faker-js/faker": "^8.4.1",
+    "@formatjs/cli": "^6.2.12",
+    "@playwright/test": "^1.44.1",
+    "@stylistic/eslint-plugin-js": "^2.1.0",
+    "@tanstack/eslint-plugin-query": "^5.35.6",
+    "@types/node": "^20.12.12",
+    "@types/papaparse": "^5.3.14",
+    "@types/supertest": "^6.0.2",
+    "@typescript-eslint/eslint-plugin": "^7.10.0",
+    "@typescript-eslint/parser": "^7.10.0",
+    "babel-plugin-formatjs": "^10.5.16",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-jsdoc": "^46.4.6",
+    "eslint-plugin-playwright": "^0.15.3",
+    "eslint-plugin-prettier": "^5.0.0",
+    "playwright": "^1.44.0",
+    "prettier": "^3.0.2",
+    "supertest": "^7.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vitest": "^1.6.0"
+  }
+}
