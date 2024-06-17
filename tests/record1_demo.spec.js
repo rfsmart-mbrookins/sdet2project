@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 
+/*Login Test*/
 test('test', async ({ page }) => {
   await page.goto('https://www.saucedemo.com/');
   await page.locator('[data-test="username"]').click();
@@ -9,3 +10,4 @@ test('test', async ({ page }) => {
   await page.locator('[data-test="login-button"]').click();
   await expect(page).toHaveTitle('Swag Labs');
 });
+
