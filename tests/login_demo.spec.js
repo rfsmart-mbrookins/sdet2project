@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
- test.only('Demo Login Test 1', async({page}) => {
+ test('Demo Login Test 1', async({page}) => {
     await page.goto('https://demo.applitools.com/')
     // await page.pause()
     await page.locator('[placeholder="Enter your username"]').fill('Raghav')
@@ -8,7 +8,7 @@ import { test, expect } from '@playwright/test';
     await page.locator('text=ACME').isVisible()
  });
 
- test('Demo Login Test 2', async({page}) => {
+ test.only('Demo Login Test 2', async({page}) => {
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php')
     // await page.pause()
     await page.locator('[placeholder="Username"]').click()
